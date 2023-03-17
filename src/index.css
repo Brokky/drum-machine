@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Syne Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +8,63 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 1.2rem;
+
+  width: 23rem;
+  height: 23rem;
+  background-color: cornflowerblue;
+  padding: 1rem;
+  border-radius: 1rem;
+
+}
+
+.drum-pad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkred;
+  width: 6rem;
+  height: 6rem;
+  font-size: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 1rem red, -0.2rem -0.2rem 1rem red;
+  transition: 0.5s;
+
+  cursor: pointer;
+}
+
+.drum-pad:hover, .drum-pad:active {
+  transform: scale(1.1);
+  background: rgb(93, 0, 19);
+  color: lightgray;
+}
+
+#drum-machine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: gray;
+}
+
+#display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  width: 25rem;
+  height: 5rem;
+  background-color: darkred;;
+  border-radius: 1rem;
+  font-size: 2rem;
+  
 }
