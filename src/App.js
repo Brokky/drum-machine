@@ -104,7 +104,7 @@ function App() {
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);
-  }, []);
+  });
 
   return (
     <div id="drum-machine">
