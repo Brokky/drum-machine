@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 
 import firstAudio from './audio/Cev_H2.mp3'
 import secondAudio from './audio/Dsc_Oh.mp3'
@@ -68,7 +68,6 @@ function App() {
 
   const handleKeyDown = (e) => {
 
-
     switch (e.key) {
       case 'q':
       case 'w':
@@ -96,7 +95,10 @@ function App() {
           {
             duration: 500,
           }
-        )
+        );
+        break;
+        default:
+          console.log('wrong input');
     }
   }
 
